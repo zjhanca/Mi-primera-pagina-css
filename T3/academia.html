@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlizStar</title>
+    <title>Gliz Star</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="Img/logo one white grande png.png" alt="Logo">
-        </div>
+        <img src="Img/logo one white grande png.png" alt="Logo">
         <nav>
             <a href="Index.html">Inicio</a>
-            <a href="proyectos.html">Proyecto</a>
             <a href="academia.html">Academia</a>
-            <a href="sobremi.html">Sobre mí</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="sobremi.html">Sobre mi</a>
         </nav>
-        <div class="header-icons">
-            <input type="text" placeholder="Buscar..." class="search-bar">
-            <button class="theme-toggle">🌙</button>
-            <img src="Img/beby.jpg" alt="Perfil" class="profile-pic">
-            <span class="notifications">🔔</span>
-        </div>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <img src="Img/confi.png" alt="Configuración" class="icon" onclick="alert('Configuración')">
+        <img src="Img/noti.png" alt="Notificaciones" class="icon" onclick="alert('Notificaciones')">
+        <img src="Img/beby.jpg" alt="Perfil" class="icon" onclick="alert('Perfil')">
     </header>
     <main>
-        <h1>Academia</h1>
-        <p>Los logros que tengo son haberme graduado de bachiller y media técnica "análisis y desarrollo de software" mis logros académicos por cumplir con graduarme del SENA en el ambiente de "análisis y desarrollo de software" para cumplir mis metas.</p>
+        <div class="card">
+            <div><section id="academia">
+                <h2>Academia</h2>
+                <div class="content-box">
+                    <div class="text-box">
+                        <p>Los logros academicos que he podido lograr son haberme graduado de bachiller y media técnica "análisis y desarrollo de software" mis logros académicos por cumplir con graduarme del SENA en el ambiente de "análisis y desarrollo de software" para cumplir mis metas</p>
+                    </div>
+                    <div class="diploma-box" onclick="openDiploma()">
+                        <h3>Diploma IEK</h3>
+                        <img src="Img/Imagen de WhatsApp 2025-03-17 a las 22.03.28_8c3fd9d0.jpg" alt="Diploma IEK" style="width: 20%; border-radius: 10px;">
+                        <p>Haz clic para ver el diploma en grande.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Modal para ver el diploma en grande -->
+            <div id="diplomaModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+                <span onclick="closeDiploma()" style="color:white; cursor:pointer; position:absolute; top:20px; right:30px;">Cerrar</span>
+                <img id="diplomaImage" src="Img/Imagen de WhatsApp 2025-03-17 a las 22.03.28_8c3fd9d0.jpg" alt="Diploma IEK" style="max-width:90%; max-height:90%;">
+            </div>
+            
+            <script>
+            function openDiploma() {
+                document.getElementById('diplomaModal').style.display = 'flex';
+            }
+            
+            function closeDiploma() {
+                document.getElementById('diplomaModal').style.display = 'none';
+            }
+            </script>
+            
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Derechos Reservados</p>
+        &copy; 2025 Todos los derechos reservados
     </footer>
 </body>
 </html>

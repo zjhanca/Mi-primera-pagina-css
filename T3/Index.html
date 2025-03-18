@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlizStar</title>
+    <title>Gliz Star</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="Img/logo one white grande png.png " alt="Logo">
-        </div>
+        <img src="Img/logo one white grande png.png" alt="Logo">
         <nav>
             <a href="Index.html">Inicio</a>
-            <a href="proyectos.html">Proyecto</a>
             <a href="academia.html">Academia</a>
-            <a href="sobremi.html">Sobre mí</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="sobremi.html">Sobre mi</a>
         </nav>
-        <div class="header-icons">
-            <input type="text" placeholder="Buscar..." class="search-bar">
-            <button class="theme-toggle">🌙</button>
-            <img src="Img/beby.jpg" alt="Perfil" class="profile-pic">
-            <span class="notifications">🔔</span>
-        </div>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <img src="Img/confi.png" alt="Configuración" class="icon" onclick="alert('Configuración')">
+        <img src="Img/noti.png" alt="Notificaciones" class="icon" onclick="alert('Notificaciones')">
+        <img src="Img/beby.jpg" alt="Perfil" class="icon" onclick="alert('Perfil')">
     </header>
     <main>
-        <h1>Inicio</h1>
-        <p>Bienvenido a nuestra web, donde podrás conocer más sobre nuestro proyecto, explorar la sección académica y descubrir información sobre nosotros.</p>
+        <div class="card">
+        <div>
+            <section id="welcome">
+                <h1>Bienvenida a Mi primera web css</h1>
+                <p>¡Hola! Te damos la bienvenida a nuestro sitio, donde encontrarás una variedad de recursos y herramientas diseñadas para mejorar tu experiencia. Aquí podrás acceder a:</p>
+                <ul>
+                    <li><strong>Configuraciones Personalizadas</strong>: Ajusta tu perfil y preferencias para una experiencia más personalizada.</li>
+                    <li><strong>Notificaciones</strong>: Mantente al tanto de las actualizaciones y novedades importantes.</li>
+                    <li><strong>Contenido Interesante</strong>: Explora artículos, tutoriales y guías que te ayudarán a aprovechar al máximo nuestras funcionalidades.</li>
+                </ul>
+                <p>Nos esforzamos por ofrecerte un entorno amigable y accesible. Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos. ¡Disfruta tu visita!</p>
+            </section>
+        </div>
+        </div>
     </main>
     <footer>
-        <p>Derechos Reservados</p>
+        &copy; 2025 Todos los derechos reservados
     </footer>
 </body>
 </html>
