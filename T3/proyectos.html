@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gliz Star</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Img/logo one white grande png.png" alt="Logo">
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="academia.html">Academia</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="sobremi.html">Sobre mi</a>
+        </nav>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <img src="Img/confi.png" alt="Configuración" class="icon" onclick="alert('Configuración')">
+        <img src="Img/noti.png" alt="Notificaciones" class="icon" onclick="alert('Notificaciones')">
+        <img src="Img/beby.jpg" alt="Perfil" class="icon" onclick="alert('Perfil')">
+    </header>
+    <main>
+        <div class="card">
+            <div>        
+                <section id="proyecto">
+                <center><h2 class="project-title">GlizStar</h2></center>
+                <div class="content-box">
+                    <center><p>No he realizado proyectos, pero a futuro me gustaria realizar un proyecto de una marca de ropa. nombreda GlizStar</p></center>
+                </div>
+            </section>
+        </div>
+        <div class="card">
+
+            <section id="contenido2">
+                <center><h2 class="project-title">Logo y 1er diseños</h2></center>
+                <div class="content-box">
+                    <div class="image-box" onclick="openImage('Img/logo one black in.tt.jpg')">
+                        <h3>Logo black</h3>
+                        <img src="Img/logo one black in.tt.jpg" alt="Imagen 1">
+                        <p>Haz clic para ver la imagen en grande.</p>
+                    </div>
+                    <div class="image-box" onclick="openImage('Img/logo two white in.tt.jpg')">
+                        <h3>Logo white</h3>
+                        <img src="Img/logo two white in.tt.jpg" alt="Imagen 2">
+                        <p>Haz clic para ver la imagen en grande.</p>
+                    </div>
+                    <div class="image-box" onclick="openImage('Img/one black jpg.png')">
+                        <h3>1er diseño black</h3>
+                        <img src="Img/one black jpg.png" alt="Imagen 3">
+                        <p>Haz clic para ver la imagen en grande.</p>
+                    </div>
+                    <div class="image-box" onclick="openImage('Img/one white jpg.png')">
+                        <h3>1er diseño white</h3>
+                        <img src="Img/one white jpg.png" alt="Imagen 4">
+                        <p>Haz clic para ver la imagen en grande.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <div id="imageModal" onclick="closeImage()">
+                <span class="close-button" onclick="closeImage()">Cerrar</span>
+                <img id="modalImage" src="" alt="Imagen en Grande">
+            </div>
+    
+        </main>
+    
+        <script>
+            function openImage(src) {
+                document.getElementById('modalImage').src = src;
+                document.getElementById('imageModal').style.display = 'flex';
+            }
+    
+            function closeImage() {
+                document.getElementById('imageModal').style.display = 'none';
+            }
+        </script>
+    <footer>
+        &copy; 2025 Todos los derechos reservados
+    </footer>
+</body>
+</html>
